@@ -1,0 +1,86 @@
+.showpic img {
+    width: 100%;
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+
+
+}
+
+.showpic img:hover {
+	transform: scale(1.2);
+
+}
+
+ .vertical-text{
+ 	text-align: left;
+ 	transform: rotate(90deg);
+	transform-origin: center center 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	margin-top: 60%;
+
+ }
+
+ #intro{
+ 	text-align: center;
+ }
+
+ #intro #first-line{
+ 	font-family: 'Bungee Inline', cursive;
+ 	font-size: 60px;
+ }
+
+#intro #second-line{
+ 	font-family: 'Lalezar', cursive;
+ 	font-size: 48px;
+ }
+
+#intro #third-line{
+ 	font-family: 'Righteous', cursive;
+ 	font-size: 36px;
+ }
+#intro #forth-line{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:36px;
+}
+#intro #fifth-line{
+	font-family: 'Cuprum', sans-serif;
+	font-size:36px;
+}
+
+#intro #sixth-line{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 36px;
+}
+#intro #seventh-line{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:42px;
+}
+
+
+#one{
+	margin-top: 10%;
+}
+
+#two{
+	margin-top:19%;
+}
+
+#four{
+	margin-top: 47%;
+}
+
+
+.image-container{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+
+} 
+
+
+
+
+
+
+
