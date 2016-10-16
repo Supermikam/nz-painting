@@ -7,7 +7,7 @@
 }
 
 .showpic img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 
 }
 
@@ -26,6 +26,7 @@
  }
 
  #intro #first-line{
+     margin-top: 2rem;
  	font-family: 'Bungee Inline', cursive;
  	font-size: 60px;
  }
@@ -58,15 +59,15 @@
 }
 
 
-#one{
+#onsale1{
 	margin-top: 10%;
 }
 
-#two{
+#onsale2{
 	margin-top:19%;
 }
 
-#four{
+#onsale4{
 	margin-top: 47%;
 }
 
@@ -78,7 +79,33 @@
 
 } 
 
+.flow-under{
+    position:absolute;
+    top: 100%;
+    width: 100%;
+    height: 80px;
+    z-index: 20;
+    opacity: 0.7;
+    background: black;
+}
 
+.text-on-left{
+    margin-top: 30px;
+    float: left;
+    margin-left: 5%;
+    font-family: 'Lalezar', cursive;
+ 	font-size: 28px;
+ 	color: white;
+    
+}
+
+.text-on-right{
+    margin-top: 24px;
+    float: right;
+    margin-right: 5%;
+    font-size: 28px;
+    color: white;
+}
 
 
 
