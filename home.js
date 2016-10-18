@@ -23,12 +23,16 @@ function setCart(){
 
 function addToCart(event){
     
-    var itemId = event.target.id;
+    var container = $(event.target).parent().parent().parent();
     
-    addItemToCart(itemId);
+    
+    var name = $(container).find('.name').text();
+    var price = $(container).find('.price').text();
+    var src = $(container).find('img').attr('src');
+    
+    addItemToCart(name,price,src);
     
     setCart();
-    
 }
 
 function loadImageForSection(name,v,section){

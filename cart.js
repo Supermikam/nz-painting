@@ -13,13 +13,14 @@ function initializeCart(){
 
 }
 
-function addItemToCart(itemId){
+function addItemToCart(itemName,price,src){
     var cartList = session.getItem('paintingList');
     
     
         var listArray = JSON.parse(cartList);
+        var newItem = {'name':itemName, 'price':price, 'src':src}
         
-        listArray.push(itemId);
+        listArray.push(newItem);
         
         var jsonList = JSON.stringify(listArray);
         
@@ -28,14 +29,23 @@ function addItemToCart(itemId){
 }
 
 function removeItemFromCart(itemIndexInArray){
+
     
     var cartList = session.getItem('paintingList');
     
     var listArray = JSON.parse(cartList);
+
         
-    delete listArray[itemIndexInArray];
+    var newArray = [];
+    for (var i = 0; i < listArray.length; i++){
+       
+        if(i != itemIndexInArray){
+ 
+            newArray.push(listArray[i]);
+        }
+    }
         
-    var jsonList = JSON.stringify(listArray);
+    var jsonList = JSON.stringify(newArray);
         
     session.setItem('paintingList', jsonList);
     
@@ -50,6 +60,14 @@ function getCartItemTotal(){
     var total = listArray.length;
     
     return total;
+}
+
+function getItemList(){
+     var cartList = session.getItem('paintingList');
+    
+    var listArray = JSON.parse(cartList);
+    
+    return listArray;
 }
 
 
