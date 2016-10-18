@@ -18,6 +18,10 @@
 
 }
 
+.fg-text img{
+    opacity: 0.5;
+    
+}
 .fg-text h1{
     font-family: 'Lalezar', cursive;
     font-size: 72px;
@@ -31,12 +35,12 @@
      font-family: 'Oswald', sans-serif;
      font-size: 48px;
      color: black;
-    border: white solid 3px;
-    width: 250px;
-    height: 100px;
+     border: white solid 3px;
+     width: 250px;
+     height: 100px;
      padding-top: 10px;
-    display: block;
-    margin: 100px auto auto auto;
+     display: block;
+     margin: 100px auto auto auto;
 
 
 }

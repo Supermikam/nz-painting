@@ -1,9 +1,33 @@
-/* global $ top */
+/* global $ top getCartItemTotal addItemToCart */
+
+
+
 
 function initializePage(){
     loadPopular();
     loadOnSale();
     pictureInfo();
+    setCart();
+    $('.cart-image').on('click', addToCart);
+    
+}
+
+function setCart(){
+    var cartItemTotal = getCartItemTotal();
+    if (cartItemTotal > 0){
+        var cartText = 'Cart(' + cartItemTotal + ')';
+        $('#cart').find('a').text(cartText);
+    }
+    
+}
+
+function addToCart(event){
+    
+    var itemId = event.target.id;
+    
+    addItemToCart(itemId);
+    
+    setCart();
     
 }
 
@@ -15,6 +39,7 @@ function loadImageForSection(name,v,section){
     var img = $('<img />',{src: v.src, id: v.id}).appendTo(container);
     container.find('.name').text(v.name);
     container.find('.price').text(v.price);
+    container.find('.glyphicon').attr('id', v.id);
 }
 
 function loadPopular(){
